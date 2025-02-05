@@ -192,7 +192,30 @@ Ensure the server is running before launching the client.
 Check `users.txt` and ensure the correct username and password are entered.
 
 ---
+## **Code general information**
+### ** Design Specifications**
+- Utilizes threading for connection of each user.
+- Multiple threads insure simulataneous connection as required by a chat server.
+- we have three major functions:
+- 1. handle_client : which handles the requests of the client according to the requirements set by the user
+  2. load_users: checks and verifies the users and password
+  3. send_message: response for communication of actual messages from one user point to another.
 
-## Conclusion
-This project demonstrates a robust multi-user chat server supporting authentication, private/group messaging, and concurrency handling. It provides a practical understanding of **socket programming, multithreading, and data synchronization**.
+### **Testing**
+- Code worked correctly with operating normally upto 16 threads. After that our computer faced issues with terminal opernings.
+- There is no limitation within the server for number of users, number of groups, size of message. However, this factors are greatly influenced by the computation power of the device on which the server is hosted.
+
+### **Challenges**
+- The major challenge in the assignment was to come up with the connection design for the socket connection.
+- Lack of knowledge of server development by use of CPP also possessed a set back for us.
+- Testing was one of the hardest things to do after the completion as we did not had a common cluster of devices hence everything was done on the same machine.
+
+### **Contribution**
+- All three of the members had equal contribution in the project.
+- Chinmay Pillai: Design of the server functionalities and common architecture, creating of the tests and documentation of the code.
+- Shubham Kumar, Ashutosh Dwivedi: Coding the server. Implementation of various functions and optimizing the connection time. Creation of repository and responsible for preparation of README file.
+
+## Declaration
+We team members declare that we did not indulge in any malpractices during the course of this assignment. All the code in this assignment has been written manually and was not copied from any website, other group member or Gen AI .
+- Team members.
 
