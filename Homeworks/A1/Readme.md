@@ -1,5 +1,10 @@
 # README: Chat Server with Groups and Private Messaging
 
+## Group members
+- **Shubham Kumar** 200967
+- **Ashutosh Dwivedi** 200214
+- **Chinmay Hiran Pillai** 200298
+
 ## Overview
 This project implements a **multi-threaded chat server** that supports:
 - **User authentication** using `users.txt`
